@@ -1,0 +1,34 @@
+<html> <head> 
+<style>
+		.content {text-align: center;}
+	</style>
+	
+	<script>
+		var bulb_status = false;
+		
+		function bulb_toggle() {
+			
+			bulb_status = bulb_status ? false : true;
+			var bulb_ele = document.getElementById('bulb')
+			
+			if (bulb_status) {
+				bulb_ele.src='https://vuacaygiong.com/wp-content/uploads/2020/12/bo_booth7.jpg';
+			}
+			else {
+				bulb_ele.src='https://cdn.tgdd.vn/2020/07/content/9-tac-dung-cua-qua-bo-voi-suc-khoe-cac-luu-y-khi-su-dung-bo-va-mon-an-ngon-tu-loai-qua-nay-6-800x800.jpg'
+			}
+		}
+	</script>
+	
+</head>
+<body>
+<h1 align="center"> Ví dụ 10-Events</h1>
+<h2 align="center" onmouseover="style.color='red'" onmouseout="style.color='blue'"> Chạm vào chữ sẽ đổi màu </h2>
+<hr>
+<div class="content">
+		<img id="bulb" onmousedown="bulb_toggle()" src="https://cdn.tgdd.vn/2020/07/content/9-tac-dung-cua-qua-bo-voi-suc-khoe-cac-luu-y-khi-su-dung-bo-va-mon-an-ngon-tu-loai-qua-nay-6-800x800.jpg" alt="" width="200">
+	</div>
+<h3 align="center"> Click vào ảnh để bổ quả bơ </h3>
+<a href="https://minhtamb1905977.github.io/KC326/LK2"> <p align="center">Trở về trang chủ</p>
+</body>
+</html>
