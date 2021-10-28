@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title>Popup</title>
+	<script type="text/javascript">
+	function disp_alert()
+{
+	alert("Hello again! This is how we  " + '\n' +"add line breaks to an alert ")
+}
+</script> 
+<script type="text/javascript">
+	function disp_confirm()
+	{
+		var name=confirm("Nhấn nút")
+		if (name==true)
+	  {
+		document.write("Bạn đồng ý!")
+	  }
+	else
+	  {
+	  	document.write("Cancel")
+	  }
+
+	}
+</script>
+<script type="text/javascript">
+	function disp_prompt()
+	{
+		var name=prompt("Hãy nhập tên của bạn","")
+		if (name!=null && name!="")
+	  {
+		document.write("Chào " + name + "! Chúc bạn một ngày tốt lành nha!")
+	  }
+
+	}
+</script>
+<script type="text/javascript">
+	function myfunction(txt)
+	{
+		alert(txt)
+	}
+</script>
+
+</head>
+<body bgcolor="#CCFF66">
+<h1 align="center" style="font-family:Courier;font-size: 200%; color:#006600;"> Ví dụ 7-alert("sometext") </h1>
+<form>
+	<input type="button"
+	onclick="disp_alert()" value="Hiển thị cảnh báo">
+</form>
+<hr>
+<h1 align="center" style="font-family:Courier;font-size: 200%; color:#006600;"> Ví dụ 8-confirm("sometext")
+ </h1>
+ <form>
+ 	<input type="button"
+ 	onclick="disp_confirm()" value="Hiển thị hộp xác nhận">
+ </form>
+ <hr>
+<h1 align="center" style="font-family:Courier;font-size: 200%; color:#006600;"> Ví dụ 9-prompt("sometext","defaultvalue")
+ </h1>
+ <form>
+ 	<input type="button"
+ 	onclick="disp_prompt()" value="Prompt box">
+ </form>
+ <hr>
+  <hr>
+<h1 align="center" style="font-family:Courier;font-size: 200%; color:#006600;"> Ví dụ 10-Kết hợp với Form
+ </h1>
+<form>
+	<input type="button"
+	onclick="myfunction('Chào buổi sáng!')"
+	value="Buổi sáng">
+	<input type="button"
+	onclick="myfunction('Chúc ngủ ngon!')"
+	value="Khuya">	
+</form>
+ <a href="https://minhtamb1905977.github.io/KC326/LK3"> <p align="center">Trở về trang chủ</p> </a>
+</body>
+</html>
